@@ -1,6 +1,6 @@
 # Libraree
 
-## Try it.
+## Try it
 
 https://jon-torres.github.io/Libraree/
 
