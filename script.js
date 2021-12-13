@@ -67,12 +67,12 @@ class Library {
   }
 
   updateStatus(book) {
-    if (myLibrary[book]['bookRead'] === 'Already read') {
-      myLibrary[book].bookRead = 'Not read yet';
-    } else if (myLibrary[book]['bookRead'] === 'Not read yet') {
-      myLibrary[book].bookRead = 'Already read';
+    if (myLibrary[book]['bookRead'] === 'Read') {
+      myLibrary[book].bookRead = 'Not read';
+    } else if (myLibrary[book]['bookRead'] === 'Not read') {
+      myLibrary[book].bookRead = 'Read';
     } else if (myLibrary[book]['bookRead'] === 'Reading') {
-      myLibrary[book].bookRead = 'Already read';
+      myLibrary[book].bookRead = 'Read';
     }
   }
 
