@@ -23,7 +23,7 @@ const bookTable = document
     if (e.target.innerHTML == 'Remove') {
       if (
         confirm(
-          `${currentTarget.innerText} is gonna be removed from your library. This action can't be undone.`
+          `"${currentTarget.innerText}" is gonna be removed from your library. This action can't be undone.`
         )
       )
         Library.prototype.removeBook(
