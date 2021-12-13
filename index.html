@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Libraree</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Icon made by Good-ware, find them at https://www.flaticon.com/authors/good-ware -->
+    <link rel="icon" type="image/png" href="favicon/book.png">
+
+</head>
+
+<body>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+
+        <div class="row">
+            <div class="twelve column" style="margin-top: 10%;">
+                <h1>Libraree</h1>
+                <p>
+                    Libraree is a small library application built using the dead simple,<br> responsive/mobile ready CSS
+                    boilerplate
+                    <a href="https://getskeleton.com/">Skeleton</a>.<br><br>
+                    It keeps track of your reading backlog and saves it locally so you can<br> revisit this page anytime
+                    you need.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <form action="">
+                <div class="four columns">
+                    <label for="title">Book</label>
+                    <input type="text" class="u-full-width" id="title" placeholder="Arsène Lupin vs. Herlock Sholmes"
+                        required />
+                </div>
+                <div class="four columns">
+                    <label for="author">Author</label>
+                    <input type="text" class="u-full-width" id="author" placeholder="Maurice Leblanc" required />
+                </div>
+                <div class="two columns">
+                    <label for="num-of-pages">Pages</label>
+                    <input type="number" class="u-full-width" id="num-of-pages" placeholder="272" required />
+                </div>
+                <div class="two columns">
+                    <label for="read">Read</label>
+                    <select name="read" id="read" class="u-full-width">
+                        <option value="Reading">Reading</option>
+                        <option value="Already read">Already read</option>
+                        <option value="Not read yet">Not read yet</option>
+                    </select>
+                </div>
+                <input type="submit" value="submit" class="button-primary" />
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="twelve columns"></div>
+            <table class="twelve columns">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                <tbody id="book-table-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
